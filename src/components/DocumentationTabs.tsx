@@ -1,12 +1,20 @@
 import { FC } from 'react'
-import { Tabs, TabsList, TabsTrigger } from '@/ui/Tabs'
+import { TabsContent, Tabs, TabsList, TabsTrigger } from '@/ui/Tabs'
+import SimpleBar from 'simplebar-react'
 
 const DocumentationTabs: FC = () => {
-    return (<Tabs default>
+    return (<Tabs defaultValue='nodejs' className='max-w-2xl w-full'>
         <TabsList>
-            <TabsTrigger>Node JS</TabsTrigger>
-            <TabsTrigger>Python</TabsTrigger>
+            <TabsTrigger value='nodejs'>Node JS</TabsTrigger>
+            <TabsTrigger value='python'>Python</TabsTrigger>
         </TabsList>
+        <TabsContent value='nodejs'>
+            {/* <SimpleBar></SimpleBar> */}
+            <Code />
+        </TabsContent>
+        <TabsContent value='python'>
+            {/* <SimpleBar></SimpleBar> */}
+        </TabsContent>
     </Tabs>)
 }
 

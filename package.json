@@ -19,6 +19,7 @@
     "@radix-ui/react-dropdown-menu": "^2.0.4",
     "@radix-ui/react-scroll-area": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.3",
+    "@theme-ui/prism": "^0.15.7",
     "@total-typescript/ts-reset": "github:upstash/ratelimit",
     "@types/node": "20.1.4",
     "@types/react": "18.2.6",
